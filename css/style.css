@@ -59,10 +59,6 @@ nav {
     font-size: 24px;
 }
 
-.about-us {
-
-}
-
 .about-us p {
     font-weight: bold;
 }
@@ -111,10 +107,6 @@ footer {
     .card p {
         font-size: 15px;
     }
-
-    .about-us p {
-      font-size: ;
-    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -125,10 +117,6 @@ footer {
 
     .card p {
         font-size: 15px;
-    }
-
-    .about-us p {
-      font-size: ;
     }
 }
 
