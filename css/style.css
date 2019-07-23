@@ -1,66 +1,66 @@
 body {
-    padding-top: 70px;
-    font-family: 'Muli', sans-serif;
+  padding-top: 70px;
+  font-family: "Muli", sans-serif;
 }
 
-h1{
-    text-align: center;
-    font-weight: bolder;
+h1 {
+  text-align: center;
+  font-weight: bolder;
 }
 
 h2 {
-    text-align: center;
-    padding-bottom: .5em;
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 nav {
-    background-color: white;
+  background-color: white;
 }
 
 .nav-link {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .btn {
-    background-color: #062a76;
-    font-weight: bold;
+  background-color: #062a76;
+  font-weight: bold;
 }
 
 .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .services {
-    background-color: #e1e1e1;
-    padding-bottom: 2em;
+  background-color: #e1e1e1;
+  padding-bottom: 2em;
 }
 
 .services h1 {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 .serviceCards .card {
-    width: 20em;
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 20em;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tagline {
-    background-color: #062a76;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
+  background-color: #062a76;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .about-us p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #teamPhoto {
@@ -74,88 +74,85 @@ nav {
 }
 
 .testCards .card {
-    background-color: #062a76;
-    color: white;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    margin-bottom: 5vh;
-    text-align: center;
-    box-shadow: 5px 5px 3px #777;
+  background-color: #062a76;
+  color: white;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  margin-bottom: 5vh;
+  text-align: center;
+  box-shadow: 5px 5px 3px #777;
 }
 
 .reviews {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    background-color: #e1e1e1;
+  background-color: #e1e1e1;
 }
 
 .line li {
-    list-style: none;
+  list-style: none;
 }
 
 @media (max-width: 575.99px) {
-    .tagline {
-        font-size: 14px;
-    }
+  .tagline {
+    font-size: 14px;
+  }
 
-    .card p {
-        font-size: 15px;
-    }
+  .card p {
+    font-size: 15px;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 576px) {
-    .tagline {
-        font-size: 15px;
-    }
+  .tagline {
+    font-size: 15px;
+  }
 
-    .card p {
-        font-size: 15px;
-    }
+  .card p {
+    font-size: 15px;
+  }
 }
 
 /* Medium devices (tablets, 768px and down) */
 @media (min-width: 768px) {
+  .tagline {
+    font-size: 16px;
+  }
 
-    .tagline {
-        font-size: 16px;
-    }
-
-    .card p {
-        font-size: 15px;
-    }
-
+  .card p {
+    font-size: 15px;
+  }
 }
 
 /* Large devices (desktops, 992px and down) */
 @media (min-width: 992px) {
-    h2 {
-        font-size: 32px;
-    }
+  h2 {
+    font-size: 32px;
+  }
 
-    ul li {
-        font-size: 18px;
-    }
+  ul li {
+    font-size: 18px;
+  }
 
-    .tagline {
-        font-size: 18px;
-    }
+  .tagline {
+    font-size: 18px;
+  }
 
-    .card p {
-        font-size: 18px;
-    }
+  .card p {
+    font-size: 18px;
+  }
 
-    .contact {
-        font-size: 1.5em;
-    }
-
+  .contact {
+    font-size: 1.5em;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and down) */
 @media (min-width: 1200px) {
-    .tagline {
-        font-size: 22px;
-    }
+  .tagline {
+    font-size: 22px;
+  }
 }
