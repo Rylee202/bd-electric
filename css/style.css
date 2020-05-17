@@ -68,14 +68,25 @@ ul li {
   font-size: 24px;
 }
 
-.about-us p {
-  font-weight: bold;
+.about-us {
+  position: relative;
 }
 
 #teamPhoto {
-  width: 75%;
-  margin: auto;
-  display: block;
+  width: 100%;
+  background: white;
+  opacity: 0.7;
+}
+
+.about-us-text {
+  position: absolute;
+  top: 9%;
+  padding: 2em;
+}
+
+.about-us p {
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .testimonials {
@@ -92,12 +103,123 @@ ul li {
   box-shadow: 5px 5px 3px #777;
 }
 
+.cards {
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.cards:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
 .reviews {
   text-align: center;
+  font-size: 18px;
 }
 
 footer {
   background-color: #e1e1e1;
+}
+
+.form {
+  position: relative;
+}
+
+.contact {
+  font-size: 2rem;
+}
+
+#contact {
+  margin: 1rem 0;
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #062a76;
+  color: white;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #0069d9;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+::-webkit-input-placeholder {
+  color: #888;
+}
+:-moz-placeholder {
+  color: #888;
+}
+::-moz-placeholder {
+  color: #888;
+}
+:-ms-input-placeholder {
+  color: #888;
 }
 
 .line li {
@@ -109,8 +231,19 @@ footer {
     font-size: 14px;
   }
 
-  .card p {
-    font-size: 15px;
+  #teamPhoto {
+    background: none;
+    opacity: 1;
+  }
+
+  .about-us-text {
+    position: relative;
+    top: 0;
+    padding: 2em;
+  }
+
+  .about-us p {
+    font-size: 16px;
   }
 }
 
@@ -120,7 +253,12 @@ footer {
     font-size: 15px;
   }
 
-  .card p {
+  .about-us-text {
+    position: relative;
+    top: 0;
+  }
+
+  .about-us p {
     font-size: 15px;
   }
 }
@@ -131,8 +269,14 @@ footer {
     font-size: 16px;
   }
 
-  .card p {
-    font-size: 15px;
+  .about-us-text {
+    position: relative;
+    top: 0;
+    padding: 2em;
+  }
+
+  .about-us p {
+    font-size: 16px;
   }
 }
 
@@ -150,12 +294,18 @@ footer {
     font-size: 18px;
   }
 
-  .card p {
-    font-size: 18px;
+  .about-us-text {
+    position: absolute;
+    top: 0%;
+    padding: 2em;
+  }
+
+  .about-us p {
+    font-size: 16px;
   }
 
   .contact {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
@@ -163,5 +313,9 @@ footer {
 @media (min-width: 1200px) {
   .tagline {
     font-size: 22px;
+  }
+
+  .about-us p {
+    font-size: 18px;
   }
 }
