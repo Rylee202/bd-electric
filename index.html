@@ -10,97 +10,77 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-
-
+<body id="top">
   <header>
-    <div class="container">
-      <div class="row topnav">
-        <div class="col-4"></div>
-        <div class="col-8 right-content d-inline-flex justify-content-end">
-          <span class="font-weight-bold pr-3">
-              bdelectricllc&#64;outlook.com
-          </span>
-          <span class="font-weight-bold">
-            &#40;816&#41;305&#45;2055
-          </span>
-          <ul class="d-inline-flex">
-            <li class="pr-2"><a href="http://facebook.com/bdelectrickc/" title="BD Electric Facebook">
-            <img src="/images/facebook_logo.png" class="mx-auto d-lg-block d-none"/>
-            <img src="images/facebook_logo_sm.png" class="mx-auto d-lg-none" alt=""></a></li>
-            <li><a href="https://www.homeadvisor.com/rated.BDElectricLLC.46423291.html"
-            title="BD Electric Home Advisor">
-            <img src="images/homeadvisor_logo.png" class="mx-auto d-lg-block d-none" alt="">
-            <img src="images/homeadvisor_logo_sm.png" class="mx-auto d-lg-none" alt=""></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="navbar" id="top">
-        <span class="navbar-text">
-          bdelectricllc&#64;outlook.com
-        </span>
-        <span class="navbar-text">
-          &#40;816&#41;305&#45;2055
-        </span>
-        <ul class="navbar-nav">
-          <li><a href="http://facebook.com/bdelectrickc/" title="BD Electric Facebook"
-          class="facebook">Facebook</a></li>
-          <li><a href="https://www.homeadvisor.com/rated.BDElectricLLC.46423291.html"
-          title="BD Electric Home Advisor" class="home-advisor">Home Advisor</a></li>
-        </ul>
-      </div>
-    </nav> -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="http://bdelectrickc.com" title="BD Electric KC">Brand</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#top" title="Home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services" title="Services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-us" title="About Us">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials" title="Testimonials">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" title="Contact">Contact</a>
-          </li>
-          <li>
-            <form class="form-inline">
-                <button class="btn btn-primary text-white" type="button" role="button">Request a Bid!</button>
-            </form>
-          </li>
-        </ul>
-      </nav> 
-      
+      <nav class="navbar bg-light fixed-top justify-content-around">
+          <a class="navbar-brand logo" href="http://bdelectrickc.com" title="BD Electric KC">
+            <img class="logo-img" src="/images/logo.jpg" alt="BD Electric Logo" /></a>
+              <div class="flex-column">
+                <ul class="navbar-nav topnav">
+                  <li class="nav-item">
+                    <span class="nav-link">bdelectricllc&#64;outlook.com</span>
+                  </li>
+                  <li class="nav-item">
+                    <span class="nav-link">&#40;816&#41;305&#45;2055</span>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://facebook.com/bdelectrickc/" title="BD Electric Facebook"
+                        class="facebook">
+                        <img src="/images/facebook_logo.png" class="mx-auto d-lg-block d-none"/>
+                        <img src="images/facebook_logo_sm.png" class="mx-auto d-lg-none" alt="">
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.homeadvisor.com/rated.BDElectricLLC.46423291.html"
+                      title="BD Electric Home Advisor" class="home-advisor">
+                      <img src="images/homeadvisor_logo.png" class="mx-auto d-lg-block d-none" alt="">
+                      <img src="images/homeadvisor_logo_sm.png" class="mx-auto d-lg-none" alt="">
+                    </a>
+                  </li>
+                </ul>
+                  <ul class="navbar-nav botnav" id="myBotnav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/index.html#top" title="Home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#services" title="Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#about-us" title="About Us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#testimonials" title="Testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#contact" title="Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <form class="form-inline nav-link">
+                          <button class="btn btn-primary request-btn text-white" type="button" role="button">Request a Bid!</button>
+                      </form>
+                    </li>
+                  </ul>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </div>
+    </nav>   
   </header>
 
   <main>
-    <div class="container slider">
-      <div class="row" id="slideshow">
+    <div class="slider">
+      <div id="slideshow">
         <div class="slide-wrapper">
-          <div class="slide"><img class="slide-img" src="" alt="" /></div>
-          <div class="slide"><img class="slide-img" src="" alt="" /></div>
-          <div class="slide"><img class="slide-img" src="" alt="" /></div>
-          <div class="slide"><img class="slide-img" src="" alt="" /></div>
-          <div class="slide"><img class="slide-img" src="" alt="" /></div>
+          <div class="slide"><img class="slide-img" src="/images/slide-1.jpg" alt="" /></div>
+          <div class="slide"><img class="slide-img" src="/images/slide-2.jpg" alt="" /></div>
+          <div class="slide"><img class="slide-img" src="/images/slide-3.jpg" alt="" /></div>
+          <div class="slide"><img class="slide-img" src="/images/slide-4.jpg" alt="" /></div>
         </div>
-      </div>
+      </div> 
     </div> <!-- Container -->
-    <div class="container">
-      <div class="row services" id="services">
+    <div class="container" id="services">
+      <div class="row services">
         <h1 class="col">Our Services Offered</h1>
       </div>
       <div class="row services">
@@ -136,7 +116,7 @@
           </div> <!-- Commercial Card -->
       </div> <!-- Services Row -->
     
-        <div class="row tagline text-white py-3">
+        <div class="row tagline text-white py-3" id="about-us">
           <div class="col-md-10 offset-md-1">
           <p>We serve the Kansas City Metro area in Missouri and Kansas,<br />
           from Platte City in the north to Olethe in the south,<br />
@@ -145,7 +125,7 @@
         </div> <!-- Services Section -->
       </div> <!-- Container -->
       <div class="container">
-        <div class="about-us row" id="about-us">
+        <div class="about-us row">
           <img src="images/team_photo.jpg" id="teamPhoto" />
             <div class="about-us-text">
               <h1>About BD Electric</h1>
@@ -161,7 +141,7 @@
                 pride in a job well done. They are trained and experienced to troubleshoot and fix
                 any electrical problem that you may have in your home or business.</p>
 
-              <p>Our team wants you to be pleased with the end result and feel comfortable with the
+              <p id="testimonials">Our team wants you to be pleased with the end result and feel comfortable with the
                 entire process. You will be treated with fairly and with respect. We offer high
                 quality work at a competitive price.</p>
 
@@ -171,7 +151,7 @@
       </div>
 
       
-        <div class="container testimonials" id="testimonials">
+        <div class="container testimonials">
           <div class="row">
             <h1 class="col mb-5">Testimonials</h1>
           </div>
@@ -268,7 +248,19 @@
   </footer>
 
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>"
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myBotnav");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+
+</script>
 
 
 </body>
